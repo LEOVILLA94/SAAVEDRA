@@ -70,6 +70,10 @@
   </div>
 
   <script>
+    // Mostrar mensaje en consola al cargar la página
+    console.log("JAVASCRIPT");
+    console.log("¡NO TE LO PUEDES PERDER!");
+
     const estilosH1 = [
       { background: "#ffeb3b", color: "#3e2723", font: "Comic Sans MS" },
       { background: "#03a9f4", color: "#fff", font: "Georgia" },
