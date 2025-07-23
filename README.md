@@ -59,14 +59,10 @@
 </head>
 <body>
   <div class="contenedor">
-    <!-- Títulos -->
     <h1 id="titulo">JAVASCRIPT</h1>
     <h2 id="subtitulo">¡NO TE LO PUEDES PERDER!</h2>
-
-    <!-- Resultado del cambio -->
     <p id="resultado"></p>
 
-    <!-- Botones -->
     <div class="botones">
       <button onclick="cambiarEstiloH1()">Cambiar estilo H1</button>
       <button onclick="cambiarEstiloH2()">Cambiar estilo H2</button>
@@ -96,7 +92,10 @@
       h1.style.backgroundColor = estilo.background;
       h1.style.color = estilo.color;
       h1.style.fontFamily = estilo.font;
-      document.getElementById("resultado").innerText = "🎨 ¡Estilo H1 aplicado!";
+
+      const mensaje = `🎨 H1 cambiado: fondo ${estilo.background}, color ${estilo.color}, fuente ${estilo.font}`;
+      document.getElementById("resultado").innerText = mensaje;
+      console.log(mensaje);
     }
 
     function cambiarEstiloH2() {
@@ -105,7 +104,10 @@
       h2.style.backgroundColor = estilo.background;
       h2.style.color = estilo.color;
       h2.style.fontFamily = estilo.font;
-      document.getElementById("resultado").innerText = "🎨 ¡Estilo H2 aplicado!";
+
+      const mensaje = `🎨 H2 cambiado: fondo ${estilo.background}, color ${estilo.color}, fuente ${estilo.font}`;
+      document.getElementById("resultado").innerText = mensaje;
+      console.log(mensaje);
     }
   </script>
 </body>
